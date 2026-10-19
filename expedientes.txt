@@ -1,0 +1,3 @@
+EXP-2025-001|12345678|JUAN PEREZ GOMEZ|Solicitud de licencia|15/10/2025 09:30|Licencia de funcionamiento local comercial|Pendiente
+EXP-2025-002|45678901|CARLOS SANCHEZ DIAZ|Trámite de predio|15/10/2025 14:20|Actualización de predio urbano|Pendiente
+EXP-2025-003|87654321|MARIA LOPEZ RUIZ|Certificado de residencia|16/10/2025 11:15|Constancia de residencia para trámite bancario|Pendiente
