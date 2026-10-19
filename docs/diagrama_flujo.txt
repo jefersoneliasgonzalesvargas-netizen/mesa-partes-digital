@@ -1,0 +1,83 @@
+================================================================================
+DIAGRAMA DE FLUJO - MESA DE PARTES DIGITAL
+(Copia este contenido a Draw.io o Lucidchart para generar el gráfico)
+================================================================================
+
+[INICIO]
+    |
+    v
+[Cargar datos desde archivo (si existe)]
+    |
+    v
++---------------------------+
+|   Mostrar menú principal  |
+|  1. Registrar             |
+|  2. Buscar                |
+|  3. Listar                |
+|  4. Ordenar               |
+|  5. Guardar               |
+|  6. Cargar                |
+|  0. Salir                 |
++---------------------------+
+    |
+    v
+[Leer opción del usuario]
+    |
+    +--------+--------+--------+--------+--------+--------+
+    |        |        |        |        |        |        |
+    v        v        v        v        v        v        v
+  [1]      [2]      [3]      [4]      [5]      [6]      [0]
+    |        |        |        |        |        |        |
+    v        v        v        v        v        v        v
+ Registrar  Buscar   Listar  Ordenar  Guardar  Cargar   Guardar
+ expediente por      todos   por      en       desde    y
+            código           código   archivo  archivo  TERMINAR
+    |        |        |        |        |        |
+    |        |        |        +---> Listar     |
+    |        |        |                         |
+    +--------+--------+-------------------------+
+                      |
+                      v
+              [Volver al menú]
+
+
+----- SUBFLUJO: REGISTRAR EXPEDIENTE -----
+
+[Inicio Registrar]
+    |
+    v
+[Generar código EXP-AAAA-NNN]
+    |
+    v
+[Pedir DNI] <-----+
+    |             |
+    v             |
+{¿DNI válido?}--No+
+    | Sí
+    v
+[Pedir Nombre] <--+
+    |             |
+    v             |
+{¿Nombre OK?}--No-+
+    | Sí
+    v
+[Elegir tipo de trámite 1-5]
+    |
+    v
+[Pedir Asunto] <--+
+    |             |
+    v             |
+{¿Asunto OK?}--No-+
+    | Sí
+    v
+[Asignar fecha automática]
+[Estado = "Pendiente"]
+    |
+    v
+[Insertar en arreglos paralelos]
+    |
+    v
+[Mostrar confirmación]
+    |
+    v
+[Fin Registrar]
