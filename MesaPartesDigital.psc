@@ -1,15 +1,3 @@
-// =====================================================================
-// MESA DE PARTES DIGITAL - Prototipo
-// Fundamentos de Programación I - UPN Los Olivos
-// Pseudocódigo ejecutable en PSeInt (perfil Flexible, índices desde 1)
-// ---------------------------------------------------------------------
-// PSeInt no permite leer ni escribir archivos, por eso:
-//  - cargar_expedientes() carga 3 expedientes de ejemplo (simula leer
-//    data/expedientes.txt).
-//  - guardar_expedientes() muestra en pantalla el contenido que se
-//    escribiría en el archivo, con los campos separados por "|".
-// =====================================================================
-
 // ---------------------- VALIDACIONES ---------------------------------
 
 Funcion valido <- validar_dni(dni)
